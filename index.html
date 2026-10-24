@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja" data-base="./">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ひとり帳簿 — 確定申告の数字まで出る、フリーランス・副業のかんたん帳簿と無料計算ツール</title>
+<meta name="description" content="フリーランス・副業・クリエイターのための帳簿ツール。勘定科目さがし、減価償却・家事按分・在庫（棚卸）の計算が無料・登録不要で使えます。帳簿をつけると収支内訳書・青色申告決算書の数字が出る買い切りのPro版も。">
+<link rel="canonical" href="https://popopo-bug.github.io/hitori-chobo/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ひとり帳簿">
+<meta property="og:title" content="ひとり帳簿 — 確定申告の数字まで出る、かんたん帳簿">
+<meta property="og:description" content="フリーランス・副業・クリエイターのための帳簿ツール。勘定科目さがし、減価償却・家事按分・在庫（棚卸）の計算が無料・登録不要で使えます。帳簿をつけると収支内訳書・青色申告決算書の数字が出る買い切りのPro版も。">
+<meta property="og:url" content="https://popopo-bug.github.io/hitori-chobo/">
+<meta property="og:image" content="https://popopo-bug.github.io/hitori-chobo/og/default.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f3b6f">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="icon" href="./icons/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./assets/style.css?v=816df22148">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"ひとり帳簿","url":"https://popopo-bug.github.io/hitori-chobo/","inLanguage":"ja"},{"@type":"WebApplication","name":"ひとり帳簿","url":"https://popopo-bug.github.io/hitori-chobo/","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"description":"フリーランス・副業・クリエイターのための帳簿ツール。勘定科目さがし、減価償却・家事按分・在庫（棚卸）の計算が無料・登録不要で使えます。帳簿をつけると収支内訳書・青色申告決算書の数字が出る買い切りのPro版も。"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"勘定科目さがし・減価償却・家事按分・在庫（売上原価）の計算ツールは、すべて無料・登録不要で使えます。1年分の帳簿をつけて決算書の数字までまとめる機能は、買い切りの「ひとり帳簿 Pro」（BOOTHで販売）です。無料の体験版もあります。"}},{"@type":"Question","name":"入力したデータはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのブラウザの中（端末内）だけです。当サイトのサーバーに送信されることはありません。Pro版も、ダウンロードしたHTMLファイルをパソコンで開いて使うので、取引の内容がネットに出ることはありません。"}},{"@type":"Question","name":"青色申告の65万円控除に使えますか？","acceptedAnswer":{"@type":"Answer","text":"Pro版は、白色申告の「収支内訳書」、青色申告の簡易な帳簿（10万円控除）の「青色申告決算書」、副業の「雑所得」に対応しています。65万円・55万円控除に必要な複式簿記（貸借対照表）には対応していません。"}},{"@type":"Question","name":"確定申告書はこのツールで作れますか？","acceptedAnswer":{"@type":"Answer","text":"作れません。帳簿から計算した数字（収入・経費・所得・源泉徴収税額など）を、国税庁の「確定申告書等作成コーナー」に入力して申告書を作ります。転記しやすいよう、決算書と同じ並びで数字を出します。"}}]}]}</script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap wrap-wide hd">
+    <a class="brand" href="./"><img src="./favicon.svg" alt="" width="28" height="28"><span>ひとり帳簿</span></a>
+    <button type="button" class="btn btn-ghost btn-sm nav-toggle" aria-expanded="false" aria-controls="site-nav">メニュー</button>
+    <nav id="site-nav" class="nav" aria-label="メインメニュー">
+      <a href="./tools/kamoku/">勘定科目さがし</a>
+      <a href="./tools/genka/">減価償却</a>
+      <a href="./tools/anbun/">家事按分</a>
+      <a href="./tools/zaiko/">在庫・売上原価</a>
+      <a href="./guide/">解説</a>
+      <a class="nav-pro" href="./pro/">Pro版</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="top-hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">フリーランス・副業・クリエイターの帳簿</span>
+      <h1>帳簿をつけたら、<br><em>確定申告の数字</em>まで。</h1>
+      <p class="lead">「スマホ代は何費？」「10万円以上のパソコンはどうする？」「売れ残った同人誌は？」——確定申告前のつまずきを、無料の計算ツールで解決。1年分の帳簿から、収支内訳書・青色申告決算書の数字をまとめる買い切りのPro版もあります。</p>
+      <ul class="pills"><li>登録不要</li><li>データは端末内だけ</li><li>2026年4月の減価償却の改正に対応</li></ul>
+      <div class="cta-row"><a class="btn btn-primary btn-lg" href="tools/kamoku/">勘定科目をさがす</a><a class="btn btn-ghost btn-lg" href="pro/">Pro版を見る</a></div>
+    </div>
+    <div><img class="hero-shot" src="og/pro-report.png" alt="ひとり帳簿 Pro の申告用まとめ画面。収支内訳書の1ページ目の数字が並んでいる" width="1440" height="900" loading="eager"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="sec-h">無料の計算ツール</h2>
+    <p class="sec-lead">どれも登録不要。入力した内容は送信されず、このブラウザの中で計算します。</p>
+    <div class="tool-cards">
+      <a class="tool-card" href="tools/kamoku/"><span class="ic">🔎</span><b>勘定科目さがし</b><span>「スマホ代」「サークル参加費」「Adobe」など、133語から「何費？」がすぐわかる。経費にならないものも。</span></a>
+      <a class="tool-card" href="tools/genka/"><span class="ic">💻</span><b>減価償却 計算</b><span>10万円以上のパソコン・カメラ・車。一括償却・少額特例（2026年4月から40万円未満）・定額法を比べて、毎年の経費を表に。</span></a>
+      <a class="tool-card" href="tools/anbun/"><span class="ic">🏠</span><b>家事按分 計算</b><span>自宅の家賃・電気代・スマホ代・車を、床面積・時間・距離で按分。割合の理由のメモもそのまま作れます。</span></a>
+      <a class="tool-card" href="tools/zaiko/"><span class="ic">📦</span><b>在庫・売上原価 計算</b><span>同人誌・グッズ・ハンドメイド作品の「1部あたりの原価」と年末の在庫から、経費になる売上原価を計算。</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <h2 class="sec-h">ひとり帳簿 Pro でできること</h2>
+    <p class="sec-lead">ダウンロードしたHTMLファイルを開くだけの、買い切り・オフラインの帳簿ソフトです。</p>
+    <ol class="steps">
+      <li><b>ふだんは記帳するだけ</b>取引先を入れると科目を自動で選びます。家賃やスマホ代は「毎月くり返し」で一度に登録。</li>
+      <li><b>明細はCSVで取り込み</b>カード・銀行の明細や、ひとり請求書 Pro の請求書をまとめて取り込み。店名から科目を推測します。</li>
+      <li><b>年末にととのえる</b>家事按分・固定資産（減価償却）・在庫（棚卸）を画面の案内どおりに入れるだけ。</li>
+      <li><b>決算書の数字が出る</b>収支内訳書／青色申告決算書（10万円控除）／雑所得の数字を、書類と同じ並びで。印刷・PDFも。</li>
+    </ol>
+    <div class="cta-row"><a class="btn btn-primary" href="pro/">Pro版の詳しい説明</a><a class="btn btn-ghost" data-pro-link href="pro/">BOOTHで見る</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="sec-h">確定申告の前に読んでおきたい解説</h2>
+    <div class="cards-3">
+      <a class="link-card" href="guide/chobo/"><span class="tag">帳簿</span><b>白色申告・青色申告の帳簿のつけ方</b><span>何を書けばいい？ まとめて書いてもいい？ いつまで保存する？</span></a>
+      <a class="link-card" href="guide/anbun/"><span class="tag">家事按分</span><b>家事按分の割合の決め方</b><span>家賃・電気代・スマホ代・車。説明できる割合の決め方とメモの残し方。</span></a>
+      <a class="link-card" href="guide/genka/"><span class="tag">2026年改正</span><b>減価償却のきほん</b><span>10万・20万・40万円の分かれ目。2026年4月から少額特例は40万円未満に。</span></a>
+      <a class="link-card" href="guide/doujin/"><span class="tag">クリエイター</span><b>同人誌・グッズの在庫と確定申告</b><span>印刷代は全部その年の経費？ 売れ残りの棚卸と、BOOTH・FANBOXの手数料。</span></a>
+      <a class="link-card" href="guide/fukugyo/"><span class="tag">副業</span><b>副業の確定申告（20万円ルール）</b><span>申告がいる人・いらない人、住民税の申告、雑所得と事業所得の分かれ目。</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="faq-wrap"><section class="faq"><h2 id="faq">よくある質問</h2><details><summary>無料で使えますか？</summary><div class="a"><p>勘定科目さがし・減価償却・家事按分・在庫（売上原価）の計算ツールは、すべて無料・登録不要で使えます。1年分の帳簿をつけて決算書の数字までまとめる機能は、買い切りの「ひとり帳簿 Pro」（BOOTHで販売）です。無料の体験版もあります。</p></div></details><details><summary>入力したデータはどこに保存されますか？</summary><div class="a"><p>お使いのブラウザの中（端末内）だけです。当サイトのサーバーに送信されることはありません。Pro版も、ダウンロードしたHTMLファイルをパソコンで開いて使うので、取引の内容がネットに出ることはありません。</p></div></details><details><summary>青色申告の65万円控除に使えますか？</summary><div class="a"><p>Pro版は、白色申告の「収支内訳書」、青色申告の簡易な帳簿（10万円控除）の「青色申告決算書」、副業の「雑所得」に対応しています。65万円・55万円控除に必要な複式簿記（貸借対照表）には対応していません。</p></div></details><details><summary>確定申告書はこのツールで作れますか？</summary><div class="a"><p>作れません。帳簿から計算した数字（収入・経費・所得・源泉徴収税額など）を、国税庁の「確定申告書等作成コーナー」に入力して申告書を作ります。転記しやすいよう、決算書と同じ並びで数字を出します。</p></div></details></section></div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="./favicon.svg" alt="" width="24" height="24"><span>ひとり帳簿</span></a>
+    <div class="ft-cols">
+      <div><h4>無料の計算ツール</h4><ul>
+        <li><a href="./tools/kamoku/">勘定科目さがし（〇〇は何費？）</a></li>
+        <li><a href="./tools/genka/">減価償却 計算</a></li>
+        <li><a href="./tools/anbun/">家事按分 計算</a></li>
+        <li><a href="./tools/zaiko/">在庫・売上原価 計算</a></li>
+      </ul></div>
+      <div><h4>解説</h4><ul>
+        <li><a href="./guide/chobo/">白色申告・青色申告の帳簿のつけ方</a></li>
+        <li><a href="./guide/anbun/">家事按分の割合の決め方</a></li>
+        <li><a href="./guide/genka/">減価償却のきほん（2026年4月から40万円未満）</a></li>
+        <li><a href="./guide/doujin/">同人誌・グッズの在庫と確定申告</a></li>
+        <li><a href="./guide/fukugyo/">副業の確定申告（20万円ルール）</a></li>
+      </ul></div>
+      <div><h4>このサイトについて</h4><ul>
+        <li><a href="./pro/">ひとり帳簿 Pro（買い切り・オフライン）</a></li>
+        <li><a href="./about/">運営者情報・お問い合わせ</a></li>
+        <li><a href="./privacy/">プライバシーポリシー</a></li>
+      </ul></div>
+      <div><h4>まめ帳場の道具</h4><ul>
+        <li><a href="https://popopo-bug.github.io/hitori-seikyu/">ひとり請求書</a></li>
+      </ul></div>
+    </div>
+    <p class="ft-note">入力した内容は、お使いのブラウザの中（端末内）だけで計算され、当サイトのサーバーへ送信されることはありません。計算結果や解説は一般的な情報です。個別の税務判断は税理士・税務署にご確認ください。当サイトはアフィリエイトプログラム等による広告を掲載することがあります（該当箇所に「PR」と表示）。</p>
+    <p class="ft-copy">© 2026 まめ帳場</p>
+  </div>
+</footer>
+<script>window.HC_CONFIG = {"siteName":"ひとり帳簿","proUrl":"","trialUrl":"","proPrice":"1,480円（発売記念 980円）","adsenseClient":"","adsenseSlots":{"content":"","footer":""},"affiliates":{"accounting":[{"name":"freee会計","desc":"複式簿記・貸借対照表・e-Taxまで。青色申告65万円控除を目指すなら。","url":"https://www.freee.co.jp/","affiliate":false,"cta":"公式サイトを見る"},{"name":"マネーフォワード クラウド確定申告","desc":"銀行・カード連携で仕訳を自動化。65万円控除の帳簿づけに。","url":"https://biz.moneyforward.com/tax_return/","affiliate":false,"cta":"公式サイトを見る"},{"name":"弥生 やよいの青色申告 オンライン","desc":"老舗会計ソフトのクラウド版。白色申告向けの無料プランもあり（公式サイトで要確認）。","url":"https://www.yayoi-kk.co.jp/","affiliate":false,"cta":"公式サイトを見る"}],"advisor":[{"name":"税理士ドットコム","desc":"事業所得か雑所得か、家事按分の割合など、迷ったら税理士に相談できます。","url":"https://www.zeiri4.com/","affiliate":false,"cta":"税理士を探す"}]},"contactUrl":"","siteUrl":"https://popopo-bug.github.io/hitori-chobo/"};</script>
+<script src="./assets/app.js?v=816df22148" defer></script>
+</body>
+</html>

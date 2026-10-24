@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja" data-base="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>家事按分 計算ツール｜自宅の家賃・電気代・スマホ代・車の経費を割合で計算（理由のメモつき）｜ひとり帳簿</title>
+<meta name="description" content="自宅で仕事をするフリーランス・副業向け。家賃は床面積、電気代やスマホ・ネットは使う時間、車は走行距離で、事業で使う割合と経費になる金額を計算します。帳簿に残す「割合の理由」のメモもそのまま作れます。">
+<link rel="canonical" href="https://popopo-bug.github.io/hitori-chobo/tools/anbun/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ひとり帳簿">
+<meta property="og:title" content="家事按分 計算ツール">
+<meta property="og:description" content="自宅で仕事をするフリーランス・副業向け。家賃は床面積、電気代やスマホ・ネットは使う時間、車は走行距離で、事業で使う割合と経費になる金額を計算します。帳簿に残す「割合の理由」のメモもそのまま作れます。">
+<meta property="og:url" content="https://popopo-bug.github.io/hitori-chobo/tools/anbun/">
+<meta property="og:image" content="https://popopo-bug.github.io/hitori-chobo/og/anbun.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f3b6f">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../icons/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="stylesheet" href="../../assets/style.css?v=816df22148">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"家事按分 計算ツール","url":"https://popopo-bug.github.io/hitori-chobo/tools/anbun/","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"description":"自宅で仕事をするフリーランス・副業向け。家賃は床面積、電気代やスマホ・ネットは使う時間、車は走行距離で、事業で使う割合と経費になる金額を計算します。帳簿に残す「割合の理由」のメモもそのまま作れます。"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://popopo-bug.github.io/hitori-chobo/"},{"@type":"ListItem","position":2,"name":"家事按分 計算","item":"https://popopo-bug.github.io/hitori-chobo/tools/anbun/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"家事按分の割合に決まりはありますか？","acceptedAnswer":{"@type":"Answer","text":"決まった割合はありません。国税庁は、業務に直接必要であったことが取引の記録などで明らかに区分できる部分だけを必要経費にできる、としています。床面積・使用時間・走行距離など、説明できる基準で割合を決め、その理由を残しておきましょう。"}},{"@type":"Question","name":"持ち家の場合、家賃の代わりに何を経費にできますか？","acceptedAnswer":{"@type":"Answer","text":"住宅ローンの返済額そのものは経費になりません。建物の減価償却費・固定資産税・ローンの利息・火災保険料のうち、事業で使う割合の分が経費になります。"}},{"@type":"Question","name":"家族名義の家賃や光熱費はどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"生計を一にする家族に支払う家賃は経費になりません。光熱費などは、事業主が負担している分を按分の対象にするのが基本です。迷う場合は税理士・税務署に確認してください。"}}]}]}</script>
+</head>
+<body data-page="tools-anbun">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap wrap-wide hd">
+    <a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="28" height="28"><span>ひとり帳簿</span></a>
+    <button type="button" class="btn btn-ghost btn-sm nav-toggle" aria-expanded="false" aria-controls="site-nav">メニュー</button>
+    <nav id="site-nav" class="nav" aria-label="メインメニュー">
+      <a href="../../tools/kamoku/">勘定科目さがし</a>
+      <a href="../../tools/genka/">減価償却</a>
+      <a href="../../tools/anbun/" aria-current="page">家事按分</a>
+      <a href="../../tools/zaiko/">在庫・売上原価</a>
+      <a href="../../guide/">解説</a>
+      <a class="nav-pro" href="../../pro/">Pro版</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="wrap hero-mini">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">ホーム</a><span>›</span><span aria-current="page">家事按分 計算</span></nav>
+  <h1>家事按分 計算ツール</h1>
+  <p class="lead">自宅を仕事場にしているなら、家賃・電気代・スマホ代などのうち「事業で使う分」は経費にできます。割合の決め方を選んで数字を入れると、1年分の経費になる額と、帳簿に残す理由のメモを作ります。</p>
+</section>
+<div class="wrap"><div data-app="anbun"></div></div>
+<div class="wrap"><div class="ad-slot" data-slot="content"></div></div>
+
+<article class="wrap wrap-narrow prose">
+  <h2>費用ごとの割合の決め方の例</h2>
+  <table>
+    <thead><tr><th>費用</th><th>よく使う基準</th><th>例</th></tr></thead>
+    <tbody>
+      <tr><td>家賃</td><td>床面積</td><td>仕事部屋 9㎡ ÷ 全体 36㎡ = 25%</td></tr>
+      <tr><td>電気代</td><td>床面積、または使う時間・コンセントの数</td><td>家賃と同じ 25% など</td></tr>
+      <tr><td>スマホ・ネット回線</td><td>仕事で使う時間・通信量</td><td>平日の作業時間で 50〜60% など</td></tr>
+      <tr><td>車・ガソリン</td><td>走行距離</td><td>仕事 3,000km ÷ 全体 6,000km = 50%</td></tr>
+      <tr><td>水道・ガス</td><td>仕事との関係が説明しにくい</td><td>自宅では経費にしない人が多い</td></tr>
+    </tbody>
+  </table>
+  <h2>按分した経費の記帳のしかた</h2>
+  <p>支払ったときは全額を記帳し、年末にまとめて事業分の割合を掛けるのがかんたんです。帳簿には、割合と理由（「仕事部屋 9㎡ ÷ 36㎡」など）をメモしておくと、あとで聞かれたときに説明できます。</p>
+  <p class="sources">出典：国税庁 タックスアンサー No.2210「やさしい必要経費の知識」（家事関連費）</p>
+  <p><a href="../../guide/anbun/">→ 家事按分の割合の決め方を詳しく読む</a></p>
+  <div class="box box-ok"><div class="box-h">年末の按分を自動に</div><p>「ひとり帳簿 Pro」では、科目ごとに割合と理由を一度設定すれば、1年分の取引に自動で按分を掛けて、決算書の「経費になる額」を出します。</p><p><a class="btn btn-primary" href="../../pro/">ひとり帳簿 Pro を見る</a></p></div>
+  <section class="faq"><h2 id="faq">よくある質問</h2><details><summary>家事按分の割合に決まりはありますか？</summary><div class="a"><p>決まった割合はありません。国税庁は、業務に直接必要であったことが取引の記録などで明らかに区分できる部分だけを必要経費にできる、としています。床面積・使用時間・走行距離など、説明できる基準で割合を決め、その理由を残しておきましょう。</p></div></details><details><summary>持ち家の場合、家賃の代わりに何を経費にできますか？</summary><div class="a"><p>住宅ローンの返済額そのものは経費になりません。建物の減価償却費・固定資産税・ローンの利息・火災保険料のうち、事業で使う割合の分が経費になります。</p></div></details><details><summary>家族名義の家賃や光熱費はどうなりますか？</summary><div class="a"><p>生計を一にする家族に支払う家賃は経費になりません。光熱費などは、事業主が負担している分を按分の対象にするのが基本です。迷う場合は税理士・税務署に確認してください。</p></div></details></section>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="24" height="24"><span>ひとり帳簿</span></a>
+    <div class="ft-cols">
+      <div><h4>無料の計算ツール</h4><ul>
+        <li><a href="../../tools/kamoku/">勘定科目さがし（〇〇は何費？）</a></li>
+        <li><a href="../../tools/genka/">減価償却 計算</a></li>
+        <li><a href="../../tools/anbun/">家事按分 計算</a></li>
+        <li><a href="../../tools/zaiko/">在庫・売上原価 計算</a></li>
+      </ul></div>
+      <div><h4>解説</h4><ul>
+        <li><a href="../../guide/chobo/">白色申告・青色申告の帳簿のつけ方</a></li>
+        <li><a href="../../guide/anbun/">家事按分の割合の決め方</a></li>
+        <li><a href="../../guide/genka/">減価償却のきほん（2026年4月から40万円未満）</a></li>
+        <li><a href="../../guide/doujin/">同人誌・グッズの在庫と確定申告</a></li>
+        <li><a href="../../guide/fukugyo/">副業の確定申告（20万円ルール）</a></li>
+      </ul></div>
+      <div><h4>このサイトについて</h4><ul>
+        <li><a href="../../pro/">ひとり帳簿 Pro（買い切り・オフライン）</a></li>
+        <li><a href="../../about/">運営者情報・お問い合わせ</a></li>
+        <li><a href="../../privacy/">プライバシーポリシー</a></li>
+      </ul></div>
+      <div><h4>まめ帳場の道具</h4><ul>
+        <li><a href="https://popopo-bug.github.io/hitori-seikyu/">ひとり請求書</a></li>
+      </ul></div>
+    </div>
+    <p class="ft-note">入力した内容は、お使いのブラウザの中（端末内）だけで計算され、当サイトのサーバーへ送信されることはありません。計算結果や解説は一般的な情報です。個別の税務判断は税理士・税務署にご確認ください。当サイトはアフィリエイトプログラム等による広告を掲載することがあります（該当箇所に「PR」と表示）。</p>
+    <p class="ft-copy">© 2026 まめ帳場</p>
+  </div>
+</footer>
+<script>window.HC_CONFIG = {"siteName":"ひとり帳簿","proUrl":"","trialUrl":"","proPrice":"1,480円（発売記念 980円）","adsenseClient":"","adsenseSlots":{"content":"","footer":""},"affiliates":{"accounting":[{"name":"freee会計","desc":"複式簿記・貸借対照表・e-Taxまで。青色申告65万円控除を目指すなら。","url":"https://www.freee.co.jp/","affiliate":false,"cta":"公式サイトを見る"},{"name":"マネーフォワード クラウド確定申告","desc":"銀行・カード連携で仕訳を自動化。65万円控除の帳簿づけに。","url":"https://biz.moneyforward.com/tax_return/","affiliate":false,"cta":"公式サイトを見る"},{"name":"弥生 やよいの青色申告 オンライン","desc":"老舗会計ソフトのクラウド版。白色申告向けの無料プランもあり（公式サイトで要確認）。","url":"https://www.yayoi-kk.co.jp/","affiliate":false,"cta":"公式サイトを見る"}],"advisor":[{"name":"税理士ドットコム","desc":"事業所得か雑所得か、家事按分の割合など、迷ったら税理士に相談できます。","url":"https://www.zeiri4.com/","affiliate":false,"cta":"税理士を探す"}]},"contactUrl":"","siteUrl":"https://popopo-bug.github.io/hitori-chobo/"};</script>
+<script src="../../assets/app.js?v=816df22148" defer></script>
+</body>
+</html>

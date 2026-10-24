@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja" data-base="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>在庫・売上原価 計算ツール｜同人誌・グッズ・ハンドメイドの棚卸と1部あたりの原価｜ひとり帳簿</title>
+<meta name="description" content="同人誌の印刷代やグッズの製作費は、全部がその年の経費になるわけではありません。作った数と年末の在庫数から、1部あたりの原価・期末棚卸高・売上原価を計算する無料ツール。確定申告の収支内訳書・青色申告決算書の「売上原価」の欄に使えます。">
+<link rel="canonical" href="https://popopo-bug.github.io/hitori-chobo/tools/zaiko/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ひとり帳簿">
+<meta property="og:title" content="在庫・売上原価 計算ツール（同人誌・グッズ・ハンドメイド）">
+<meta property="og:description" content="同人誌の印刷代やグッズの製作費は、全部がその年の経費になるわけではありません。作った数と年末の在庫数から、1部あたりの原価・期末棚卸高・売上原価を計算する無料ツール。確定申告の収支内訳書・青色申告決算書の「売上原価」の欄に使えます。">
+<meta property="og:url" content="https://popopo-bug.github.io/hitori-chobo/tools/zaiko/">
+<meta property="og:image" content="https://popopo-bug.github.io/hitori-chobo/og/zaiko.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f3b6f">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../icons/icon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../../icons/apple-touch-icon.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="stylesheet" href="../../assets/style.css?v=816df22148">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"在庫・売上原価 計算ツール","url":"https://popopo-bug.github.io/hitori-chobo/tools/zaiko/","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"description":"同人誌の印刷代やグッズの製作費は、全部がその年の経費になるわけではありません。作った数と年末の在庫数から、1部あたりの原価・期末棚卸高・売上原価を計算する無料ツール。確定申告の収支内訳書・青色申告決算書の「売上原価」の欄に使えます。"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://popopo-bug.github.io/hitori-chobo/"},{"@type":"ListItem","position":2,"name":"在庫・売上原価 計算","item":"https://popopo-bug.github.io/hitori-chobo/tools/zaiko/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"同人誌の印刷代は、全額その年の経費になりますか？","acceptedAnswer":{"@type":"Answer","text":"売るために作った本の印刷代は「仕入（製作費）」で、年末に売れ残った分は在庫として翌年に持ち越します。その年の経費になるのは、売れた分（売上原価）です。"}},{"@type":"Question","name":"1部あたりの原価はどう計算しますか？","acceptedAnswer":{"@type":"Answer","text":"その品の製作費の合計（印刷代・製本代など）を作った部数で割ります。例：印刷代 66,000円で150部なら、1部 440円です。"}},{"@type":"Question","name":"在庫を数えなかったらどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"年末の在庫を0円にすると、売れ残りの分まで経費にしたことになり、所得が少なく計算されてしまいます。年末（12月31日時点）の数をメモしておきましょう。"}}]}]}</script>
+</head>
+<body data-page="tools-zaiko">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="wrap wrap-wide hd">
+    <a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="28" height="28"><span>ひとり帳簿</span></a>
+    <button type="button" class="btn btn-ghost btn-sm nav-toggle" aria-expanded="false" aria-controls="site-nav">メニュー</button>
+    <nav id="site-nav" class="nav" aria-label="メインメニュー">
+      <a href="../../tools/kamoku/">勘定科目さがし</a>
+      <a href="../../tools/genka/">減価償却</a>
+      <a href="../../tools/anbun/">家事按分</a>
+      <a href="../../tools/zaiko/" aria-current="page">在庫・売上原価</a>
+      <a href="../../guide/">解説</a>
+      <a class="nav-pro" href="../../pro/">Pro版</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="wrap hero-mini">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">ホーム</a><span>›</span><span aria-current="page">在庫・売上原価 計算</span></nav>
+  <h1>在庫・売上原価 計算ツール</h1>
+  <p class="lead">同人誌・グッズ・ハンドメイド作品・仕入れた商品などを売っている人向け。今年の製作費（仕入）と年末の在庫数から、その年の経費になる「売上原価」を計算します。</p>
+</section>
+<div class="wrap"><div data-app="zaiko"></div></div>
+<div class="wrap"><div class="ad-slot" data-slot="content"></div></div>
+
+<article class="wrap wrap-narrow prose">
+  <h2>売上原価の計算式</h2>
+  <p><b>売上原価 ＝ 期首棚卸高（年はじめの在庫）＋ 仕入金額（今年の製作費・仕入）− 期末棚卸高（年末の在庫）</b></p>
+  <p>収支内訳書・青色申告決算書の「売上原価」の欄に、それぞれの金額を書きます。今年の期末棚卸高は、来年の期首棚卸高になります。</p>
+  <h2>在庫の金額の出し方</h2>
+  <ul>
+    <li><b>自分で作った物（同人誌・グッズ）</b>：その品の製作費 ÷ 作った数 ＝ 1個あたりの原価。これに年末の在庫数を掛けます。</li>
+    <li><b>仕入れた商品</b>：届け出をしていなければ、最後に仕入れたときの単価を使います（最終仕入原価法）。</li>
+    <li>破損などで売れなくなって処分した物は、在庫に含めません（処分した日・数のメモを残しておく）。書店などに委託して預けている物は、まだ自分の在庫なので含めます。</li>
+  </ul>
+  <p><a href="../../guide/doujin/">→ 同人誌・グッズの在庫と確定申告を詳しく読む</a></p>
+  <div class="box box-ok"><div class="box-h">在庫は前の年から自動で引き継ぎ</div><p>「ひとり帳簿 Pro」は、去年の年末在庫を今年の期首に自動で入れ、科目「仕入」の合計と年末在庫から売上原価を計算して、決算書の数字にします。</p><p><a class="btn btn-primary" href="../../pro/">ひとり帳簿 Pro を見る</a></p></div>
+  <section class="faq"><h2 id="faq">よくある質問</h2><details><summary>同人誌の印刷代は、全額その年の経費になりますか？</summary><div class="a"><p>売るために作った本の印刷代は「仕入（製作費）」で、年末に売れ残った分は在庫として翌年に持ち越します。その年の経費になるのは、売れた分（売上原価）です。</p></div></details><details><summary>1部あたりの原価はどう計算しますか？</summary><div class="a"><p>その品の製作費の合計（印刷代・製本代など）を作った部数で割ります。例：印刷代 66,000円で150部なら、1部 440円です。</p></div></details><details><summary>在庫を数えなかったらどうなりますか？</summary><div class="a"><p>年末の在庫を0円にすると、売れ残りの分まで経費にしたことになり、所得が少なく計算されてしまいます。年末（12月31日時点）の数をメモしておきましょう。</p></div></details></section>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="24" height="24"><span>ひとり帳簿</span></a>
+    <div class="ft-cols">
+      <div><h4>無料の計算ツール</h4><ul>
+        <li><a href="../../tools/kamoku/">勘定科目さがし（〇〇は何費？）</a></li>
+        <li><a href="../../tools/genka/">減価償却 計算</a></li>
+        <li><a href="../../tools/anbun/">家事按分 計算</a></li>
+        <li><a href="../../tools/zaiko/">在庫・売上原価 計算</a></li>
+      </ul></div>
+      <div><h4>解説</h4><ul>
+        <li><a href="../../guide/chobo/">白色申告・青色申告の帳簿のつけ方</a></li>
+        <li><a href="../../guide/anbun/">家事按分の割合の決め方</a></li>
+        <li><a href="../../guide/genka/">減価償却のきほん（2026年4月から40万円未満）</a></li>
+        <li><a href="../../guide/doujin/">同人誌・グッズの在庫と確定申告</a></li>
+        <li><a href="../../guide/fukugyo/">副業の確定申告（20万円ルール）</a></li>
+      </ul></div>
+      <div><h4>このサイトについて</h4><ul>
+        <li><a href="../../pro/">ひとり帳簿 Pro（買い切り・オフライン）</a></li>
+        <li><a href="../../about/">運営者情報・お問い合わせ</a></li>
+        <li><a href="../../privacy/">プライバシーポリシー</a></li>
+      </ul></div>
+      <div><h4>まめ帳場の道具</h4><ul>
+        <li><a href="https://popopo-bug.github.io/hitori-seikyu/">ひとり請求書</a></li>
+      </ul></div>
+    </div>
+    <p class="ft-note">入力した内容は、お使いのブラウザの中（端末内）だけで計算され、当サイトのサーバーへ送信されることはありません。計算結果や解説は一般的な情報です。個別の税務判断は税理士・税務署にご確認ください。当サイトはアフィリエイトプログラム等による広告を掲載することがあります（該当箇所に「PR」と表示）。</p>
+    <p class="ft-copy">© 2026 まめ帳場</p>
+  </div>
+</footer>
+<script>window.HC_CONFIG = {"siteName":"ひとり帳簿","proUrl":"","trialUrl":"","proPrice":"1,480円（発売記念 980円）","adsenseClient":"","adsenseSlots":{"content":"","footer":""},"affiliates":{"accounting":[{"name":"freee会計","desc":"複式簿記・貸借対照表・e-Taxまで。青色申告65万円控除を目指すなら。","url":"https://www.freee.co.jp/","affiliate":false,"cta":"公式サイトを見る"},{"name":"マネーフォワード クラウド確定申告","desc":"銀行・カード連携で仕訳を自動化。65万円控除の帳簿づけに。","url":"https://biz.moneyforward.com/tax_return/","affiliate":false,"cta":"公式サイトを見る"},{"name":"弥生 やよいの青色申告 オンライン","desc":"老舗会計ソフトのクラウド版。白色申告向けの無料プランもあり（公式サイトで要確認）。","url":"https://www.yayoi-kk.co.jp/","affiliate":false,"cta":"公式サイトを見る"}],"advisor":[{"name":"税理士ドットコム","desc":"事業所得か雑所得か、家事按分の割合など、迷ったら税理士に相談できます。","url":"https://www.zeiri4.com/","affiliate":false,"cta":"税理士を探す"}]},"contactUrl":"","siteUrl":"https://popopo-bug.github.io/hitori-chobo/"};</script>
+<script src="../../assets/app.js?v=816df22148" defer></script>
+</body>
+</html>
