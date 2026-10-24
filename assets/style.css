@@ -174,7 +174,7 @@ select.in { padding-right: 28px; appearance: none; background-image: linear-grad
 .seg input:checked + span { background: var(--surface); color: var(--text); font-weight: 700; box-shadow: var(--shadow-sm); }
 .seg input:focus-visible + span { outline: 2px solid var(--primary); }
 
-.tg { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; user-select: none; padding: 4px 0; }
+.tg { position: relative; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: 14px; user-select: none; padding: 4px 0; }
 .tg input { position: absolute; opacity: 0; width: 1px; height: 1px; }
 .tg-ui { width: 38px; height: 22px; border-radius: 999px; background: var(--border-strong); position: relative; flex: none; transition: background 0.15s; }
 .tg-ui::after { content: ''; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); transition: transform 0.15s; }
@@ -375,7 +375,9 @@ main { display: block; }
 
 /* ---- tools.css ---- */
 /* ひとり帳簿 — 計算ツール */
-.tool-grid { display: grid; gap: 18px; align-items: start; }
+.tool-grid { display: grid; gap: 18px; align-items: start; grid-template-columns: minmax(0, 1fr); }
+.tool-form > *, .tool-result > * { min-width: 0; }
+.tool-form select.in { max-width: 100%; }
 @media (min-width: 960px) { .tool-grid { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); } }
 .tool-form { display: grid; gap: 12px; }
 .tool-form .tg { display: flex; }
