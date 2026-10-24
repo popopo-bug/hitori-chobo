@@ -168,10 +168,20 @@
         buttons.map((b, i) => '<button class="btn ' + (i === buttons.length - 1 ? 'btn-primary' : 'btn-ghost') + '" value="' + esc(b[1]) + '">' + esc(b[0]) + '</button>').join('') +
         '</div></form>';
       document.body.appendChild(dl);
-      dl.addEventListener('close', () => {
-        resolve(dl.returnValue);
+      // ボタンを押したときに確定する（close イベントが遅れる環境でも動くように）。Esc で閉じたときは close で受ける
+      let done = false;
+      const finish = (v) => {
+        if (done) return;
+        done = true;
+        if (dl.open) dl.close(v);
         dl.remove();
+        resolve(v);
+      };
+      dl.querySelector('form').addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        finish(ev.submitter ? ev.submitter.value : '');
       });
+      dl.addEventListener('close', () => finish(dl.returnValue || ''));
       dl.showModal();
     });
   }
